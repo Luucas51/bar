@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f9f9f9;
+}
+
+.gradiantNavbar {
+  background: radial-gradient(circle at 10% 20%, #1d1f23 0%, rgb(64, 64, 64) 90.2%);}
