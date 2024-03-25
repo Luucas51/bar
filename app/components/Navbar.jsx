@@ -5,7 +5,6 @@ import Link from 'next/link';
 import React from 'react'
 import { useEffect } from 'react';
 import { TbMenuDeep } from "react-icons/tb";
-import Logo from '../../public/images/logo-principal-doré.png'
 
 export default function Navbar() {
 
@@ -15,21 +14,21 @@ export default function Navbar() {
    
    return (
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm bg-white">
-         <nav className="w-full sm:mx-20 px-4 sm:flex sm:items-center sm:justify-center py-4 border-b">
+         <nav className="w-full sm:px-20 px-4 sm:flex sm:items-center sm:justify-center py-4 border-b">
             <div className="flex items-center justify-between">
-            <Image src={Logo} alt='Logo' width={75} height={75} />
+            <Image src='/images/logo-principal-doré.png' alt='Logo' width={75} height={75} />
                <div className="sm:hidden">
-                  <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                  <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                   <TbMenuDeep className='hs-collapse-toggle'/>
                   </button>
                </div>
             </div>
             <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow xl:block">
                <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                  <a className="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-current="page">Landing</a>
-                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Account</a>
-                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Work</a>
-                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Blog</a>
+                  <a className="font-medium text-blue-500" href="#" aria-current="page">Landing</a>
+                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Account</a>
+                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Work</a>
+                  <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Blog</a>
                </div>
             </div>
          </nav>
